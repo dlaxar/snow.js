@@ -25,11 +25,11 @@
 
 		flakes = [];
 
-		for(var i = 0; i < 1000; i++) {
+		for(var i = 0; i < options.flakes; i++) {
 			var flake = {
 				x: Math.random() * width,
 				y: Math.random() * height,
-				vX: 2,
+				vX: options.windspeed,
 				vY: (Math.random() * options.gravityVariation) + options.gravity,
 				r: (Math.random() * options.sizeVariation) + options.size
 			};
